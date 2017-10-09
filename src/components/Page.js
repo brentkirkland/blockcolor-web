@@ -91,7 +91,10 @@ class Page extends Component {
   renderSelect() {
     if (this.props.match.path === "/") {
       return (
-        <Select getColorHashArray={this.getColorHashArray.bind(this)}/>
+        <div>
+          <Select getColorHashArray={this.getColorHashArray.bind(this)}/>
+          <br/>
+        </div>
       )
     }
   }
